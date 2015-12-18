@@ -1,0 +1,236 @@
+
+[Fri Dec 04 11:52:44.351 2015] dbu   dbus-
+[Fri Dec 04 11:52:46.273 2015] dbus-daemon    dbus-launch    dbus-monitor   dbus-send
+[Fri Dec 04 11:52:46.294 2015] / $ dbus- m      dbus-monitor
+[Fri Dec 04 11:52:54.317 2015] signal sender=org.freedesktop.DBus -> dest=:1.75 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+[Fri Dec 04 11:52:54.317 2015]    string ":1.75"
+[Fri Dec 04 11:52:54.317 2015] method call sender=:1.75 -> dest=org.freedesktop.DBus serial=3 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+[Fri Dec 04 11:52:54.317 2015]    string "type='method_call'"
+[Fri Dec 04 11:52:54.317 2015] method call sender=:1.75 -> dest=org.freedesktop.DBus serial=4 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+[Fri Dec 04 11:52:54.317 2015]    string "type='method_return'"
+[Fri Dec 04 11:52:54.317 2015] method call sender=:1.75 -> dest=org.freedesktop.DBus serial=5 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+[Fri Dec 04 11:52:54.317 2015]    string "type='error'"
+[Fri Dec 04 11:52:54.317 2015] method call sender=:1.10 -> dest=com.foobar.service.NDR serial=99 path=/com/foobar/service/NDR; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:54.317 2015]    string "JSON_GetProperties"
+[Fri Dec 04 11:52:54.317 2015]    string "{"inprop":["SEN_GPSInfo"]}"
+[Fri Dec 04 11:52:54.317 2015] method return sender=:1.9 -> dest=:1.10 reply_serial=99
+[Fri Dec 04 11:52:54.317 2015]    string "{"outprop":{"SEN_GPSInfo":{"antennaState":1,"day":4,"eastSpeed":0,"fix":3,"hdop":7,"heading":0,"height":2981,"horPosError":37,"hrs":16,"latitude":42513356,"longitude":-83444424,"min":52,"month":12,"northSpeed":0,"pdop":11,"satsUsed":10,"satsVisible":14,"sec":52,"signalQuality":4,"speed":0,"vdop":9,"vertPosError":0,"vertSpeed":0,"year":2015}}}"
+[Fri Dec 04 11:52:54.424 2015] method call sender=:1.43 -> dest=com.foobar.service.Clock serial=28 path=/com/foobar/service/Clock; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:54.462 2015]    string "getTime"
+[Fri Dec 04 11:52:54.462 2015]    string "{}"
+[Fri Dec 04 11:52:54.462 2015] method return sender=:1.10 -> dest=:1.43 reply_serial=28
+[Fri Dec 04 11:52:54.462 2015]    string "{"year":2015,"month":12,"day":4,"minute":52,"hour":16,"second":52}"
+[Fri Dec 04 11:52:55.045 2015] signal sender=:1.2 -> dest=(null destination) serial=857 path=/com/foobar/service/SWC; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:55.045 2015]    string "PTT_Press"
+[Fri Dec 04 11:52:55.045 2015]    string "{"press":"short"}"
+[Fri Dec 04 11:52:55.045 2015] method call sender=:1.35 -> dest=com.foobar.service.AudioMixerManager serial=210 path=/com/foobar/service/AudioMixerManager; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:55.476 2015]    string "requestInformationSource"
+[Fri Dec 04 11:52:55.476 2015]    string "{"exclusive":true,"source":"speech"}"
+[Fri Dec 04 11:52:55.476 2015] method call sender=:1.14 -> dest=com.foobar.service.AudioCtrlSvc serial=295 path=/com/foobar/service/AudioCtrlSvc; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:55.476 2015]    string "setMixer"
+[Fri Dec 04 11:52:55.476 2015]    string "{"batchCmds":[{"gain":-100,"input":"MEDIA","name":"main_mixer1","output":"FRONT_L_SPKR"},{"gain":-100,"input":"NAV","name":"main_mixer1","output":"FRONT_L_SPKR"},{"gain":0,"input":"PROMPTS","name":"main_mixer1","output":"FRONT_L_SPKR"},{"gain":-100,"input":"TRAFFIC","name":"main_mixer1","output":"FRONT_L_SPKR"},{"gain":-100,"input":"MEDIA","name":"main_mixer1","output":"FRONT_R_SPKR"},{"gain":-100,"input":"NAV","name":"main_mixer1","output":"FRONT_R_SPKR"},{"gain":-100,"input":"PROMPTS","name":"main_mixer1","output":"FRONT_R_SPKR"},{"gain":-100,"input":"TRAFFIC","name":"main_mixer1","output":"FRONT_R_SPKR"},{"gain":-100,"input":"MEDIA","name":"main_mixer1","output":"BACK_L_SPKR"},{"gain":-100,"input":"NAV","name":"main_mixer1","output":"BACK_L_SPKR"},{"gain":-100,"input":"PROMPTS","name":"main_mixer1","output":"BACK_L_SPKR"},{"gain":-100,"input":"TRAFFIC","name":"main_mixer1","output":"BACK_L_SPKR"},{"gain":-100,"input":"MEDIA","name":"main_mixer1","output":"BACK_R_SPKR"},{"gain":-100,"input":"NAV","name":"main_mixer1","output":"BACK_R_SPKR"},{"gain":-100,"input":"PROMPTS","name":"main_mixer1","output":"BACK_R_SPKR"},{"gain":-100,"input":"TRAFFIC","name":"main_mixer1","output":"BACK_R_SPKR"}]}"
+[Fri Dec 04 11:52:55.481 2015] method return sender=:1.12 -> dest=:1.14 reply_serial=295
+[Fri Dec 04 11:52:55.481 2015]    string "{"result":"NO_ERROR"}"
+[Fri Dec 04 11:52:55.481 2015] method return sender=:1.14 -> dest=:1.35 reply_serial=210
+[Fri Dec 04 11:52:55.481 2015]    string "{"action":"added","allowed":true,"source":"speech"}"
+[Fri Dec 04 11:52:55.481 2015] signal sender=:1.35 -> dest=(null destination) serial=211 path=/com/foobar/service/UISpeechService; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:55.481 2015]    string "vrDialogActive"
+[Fri Dec 04 11:52:55.481 2015]    string "{"state":true}"
+[Fri Dec 04 11:52:55.481 2015] signal sender=:1.35 -> dest=(null destination) serial=212 path=/com/foobar/service/UISpeechService; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:55.486 2015]    string "showTeleprompter"
+[Fri Dec 04 11:52:55.486 2015]    string "{"hardKeySessionType":"vrKeySession"}"
+[Fri Dec 04 11:52:55.486 2015] method call sender=:1.35 -> dest=com.foobar.service.AudioMixerManager serial=213 path=/com/foobar/service/AudioMixerManager; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:55.486 2015]    string "requestMicrophone"
+[Fri Dec 04 11:52:55.486 2015]    string "{"address":"com.foobar.service.UISpeechService","onOff":"on"}"
+[Fri Dec 04 11:52:55.486 2015] signal sender=:1.14 -> dest=(null destination) serial=297 path=/com/foobar/service/AudioMixerManager; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:55.486 2015]    string "interruptSrc"
+[Fri Dec 04 11:52:55.486 2015]    string "{"action":"added","allowed":true,"source":"speech"}"
+[Fri Dec 04 11:52:55.486 2015] method call sender=:1.2 -> dest=com.foobar.service.AudioMixerManager serial=858 path=/com/foobar/service/AudioMixerManager; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:55.486 2015]    string "setMixerMute"
+[Fri Dec 04 11:52:55.486 2015]    string "{"id":4,"mute":true,"input":"MEDIA"}"
+[Fri Dec 04 11:52:55.486 2015] signal sender=:1.2 -> dest=(null destination) serial=859 path=/com/foobar/service/AudioSettings; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:55.491 2015]    string "interruptStatus"
+[Fri Dec 04 11:52:55.491 2015]    string "{"active":true}"
+[Fri Dec 04 11:52:55.491 2015] signal sender=:1.14 -> dest=(null destination) serial=298 path=/com/foobar/service/AudioMixerManager; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:55.491 2015]    string "activeAudioSrc"
+[Fri Dec 04 11:52:55.491 2015]    string "{"src":"PROMPTS"}"
+[Fri Dec 04 11:52:55.491 2015] method call sender=:1.14 -> dest=com.foobar.service.AudioCtrlSvc serial=299 path=/com/foobar/service/AudioCtrlSvc; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:55.491 2015]    string "setMux"
+[Fri Dec 04 11:52:55.491 2015]    string "{"gain":2,"input":"TTS","name":"info1_mux1"}"
+[Fri Dec 04 11:52:55.491 2015] method return sender=:1.12 -> dest=:1.14 reply_serial=299
+[Fri Dec 04 11:52:55.491 2015]    string "{"rampRate":80,"result":"NO_ERROR"}"
+[Fri Dec 04 11:52:55.491 2015] method call sender=:1.14 -> dest=org.freedesktop.DBus serial=300 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=AddMatch
+[Fri Dec 04 11:52:55.491 2015]    string "type='signal',interface='com.foobar.ServiceIpc',member='Emit',path='/com/foobar/service/UISpeechService',arg0='micState'"
+[Fri Dec 04 11:52:55.491 2015] method call sender=:1.14 -> dest=com.foobar.service.UISpeechService serial=301 path=/com/foobar/service/UISpeechService; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:55.516 2015]    string "getMicrophone"
+[Fri Dec 04 11:52:55.516 2015]    string "{}"
+[Fri Dec 04 11:52:55.516 2015] signal sender=:1.35 -> dest=(null destination) serial=214 path=/com/foobar/service/UISpeechService; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:55.562 2015]    string "micState"
+[Fri Dec 04 11:52:55.595 2015]    string "{"mode":"open"}"
+[Fri Dec 04 11:52:55.595 2015] method return sender=:1.35 -> dest=:1.14 reply_serial=301
+[Fri Dec 04 11:52:55.944 2015]    string "{"code":0,"description":"success"}"
+[Fri Dec 04 11:52:55.944 2015] method return sender=:1.14 -> dest=:1.35 reply_serial=213
+[Fri Dec 04 11:52:55.944 2015]    string "{}"
+[Fri Dec 04 11:52:55.944 2015] signal sender=:1.14 -> dest=(null destination) serial=303 path=/com/foobar/service/AudioMixerManager; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:55.944 2015]    string "volumeLock"
+[Fri Dec 04 11:52:55.944 2015]    string "{"value":false}"
+[Fri Dec 04 11:52:55.944 2015] signal sender=:1.14 -> dest=(null destination) serial=304 path=/com/foobar/service/AudioMixerManager; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:55.944 2015]    string "mixerMute"
+[Fri Dec 04 11:52:55.944 2015]    string "{"id":4,"mute":true,"serviceName":"AmpControl-interrupt","source":"MEDIA"}"
+[Fri Dec 04 11:52:55.944 2015] method return sender=:1.14 -> dest=:1.2 reply_serial=858
+[Fri Dec 04 11:52:55.944 2015]    string "{"id":4,"mute":true,"serviceName":"AmpControl-interrupt","source":"MEDIA"}"
+[Fri Dec 04 11:52:55.944 2015] signal sender=:1.14 -> dest=(null destination) serial=306 path=/com/foobar/service/AudioMixerManager; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:55.944 2015]    string "volumeLock"
+[Fri Dec 04 11:52:55.944 2015]    string "{"value":false}"
+[Fri Dec 04 11:52:55.944 2015] method call sender=:1.14 -> dest=com.foobar.service.AudioCtrlSvc serial=307 path=/com/foobar/service/AudioCtrlSvc; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:55.949 2015]    string "setMixerMute"
+[Fri Dec 04 11:52:55.949 2015]    string "{"batchCmds":[{"input":"MEDIA","mute":true,"name":"main_mixer1"}]}"
+[Fri Dec 04 11:52:55.949 2015] method return sender=:1.12 -> dest=:1.14 reply_serial=307
+[Fri Dec 04 11:52:55.949 2015]    string "{"result":"NO_ERROR"}"
+[Fri Dec 04 11:52:55.949 2015] method call sender=:1.35 -> dest=com.foobar.service.HMIVR serial=216 path=/com/foobar/service/HMIVR; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:55.949 2015]    string "getCurrentVideoContext"
+[Fri Dec 04 11:52:55.949 2015]    string "{"context":10009}"
+[Fri Dec 04 11:52:55.949 2015] method call sender=:1.8 -> dest=com.foobar.service.AudioMixerManager serial=1336 path=/com/foobar/service/AudioMixerManager; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:55.949 2015]    string "getProperties"
+[Fri Dec 04 11:52:55.949 2015]    string "{"props":["activeAudioSrc","volumeLevel"]}"
+[Fri Dec 04 11:52:55.949 2015] method return sender=:1.8 -> dest=:1.35 reply_serial=216
+[Fri Dec 04 11:52:55.949 2015]    string "{"result":"success","videoContext":"default"}"
+[Fri Dec 04 11:52:55.949 2015] method call sender=:1.35 -> dest=com.foobar.service.AudioManager serial=217 path=/com/foobar/service/AudioManager; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:55.956 2015]    string "getAudioSource"
+[Fri Dec 04 11:52:55.956 2015]    string "{}"
+[Fri Dec 04 11:52:55.956 2015] method return sender=:1.14 -> dest=:1.8 reply_serial=1336
+[Fri Dec 04 11:52:55.956 2015]    string "{"activeAudioSrc":"PROMPTS","volumeLevel":{"BACK_L_SPKR":{"BEEP":8,"MEDIA":0,"NAV":12,"PHONE":0,"PROMPTS":12,"TRAFFIC":0},"BACK_R_SPKR":{"BEEP":8,"MEDIA":0,"NAV":12,"PHONE":0,"PROMPTS":12,"TRAFFIC":0},"FRONT_L_SPKR":{"BEEP":8,"MEDIA":0,"NAV":12,"PHONE":0,"PROMPTS":12,"TRAFFIC":0},"FRONT_R_SPKR":{"BEEP":8,"MEDIA":0,"NAV":12,"PHONE":0,"PROMPTS":12,"TRAFFIC":0}}}"
+[Fri Dec 04 11:52:55.956 2015] method return sender=:1.14 -> dest=:1.35 reply_serial=217
+[Fri Dec 04 11:52:55.956 2015]    string "{"fm":{"available":true},"source":"fm","uniqueName":"fm1"}"
+[Fri Dec 04 11:52:55.956 2015] method call sender=:1.35 -> dest=com.foobar.service.AudioManager serial=218 path=/com/foobar/service/AudioManager; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:55.956 2015]    string "getAudioSource"
+[Fri Dec 04 11:52:55.956 2015]    string "{}"
+[Fri Dec 04 11:52:55.956 2015] method return sender=:1.14 -> dest=:1.35 reply_serial=218
+[Fri Dec 04 11:52:55.956 2015]    string "{"fm":{"available":true},"source":"fm","uniqueName":"fm1"}"
+[Fri Dec 04 11:52:55.956 2015] method call sender=:1.35 -> dest=com.foobar.service.HMIVR serial=219 path=/com/foobar/service/HMIVR; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:55.961 2015]    string "showList"
+[Fri Dec 04 11:52:55.961 2015]    string "{"context":10100,"lineNumber":-1,"listItems":["Tune to <i><frequency></i> <k>FM / AM</k>","Tune to satellite channel <i><name / number></i>","Change source to Disc / iPod / USB/...","Set temperature to <i><number></i> degrees"],"listType":"teleprompter"}"
+[Fri Dec 04 11:52:55.961 2015] signal sender=:1.8 -> dest=(null destination) serial=1338 path=/com/foobar/service/HMIGateWay; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:55.961 2015]    string "popupActive"
+[Fri Dec 04 11:52:55.961 2015]    string "{"state":true,"type":11}"
+[Fri Dec 04 11:52:55.961 2015] method return sender=:1.8 -> dest=:1.35 reply_serial=219
+[Fri Dec 04 11:52:55.961 2015]    string "{"result":"success"}"
+[Fri Dec 04 11:52:55.961 2015] method call sender=:1.35 -> dest=com.foobar.service.HMIVR serial=220 path=/com/foobar/service/HMIVR; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:55.961 2015]    string "updateVoiceBar"
+[Fri Dec 04 11:52:55.961 2015]    string "{"color":"VR_COLOR_OK","context":10067,"iconType":"VR_ICON_SPEAK","textData":"Listening� Say a command or say \"Help\" or \"Cancel\".","timeoutRequired":false}"
+[Fri Dec 04 11:52:55.995 2015] method return sender=:1.8 -> dest=:1.35 reply_serial=220
+[Fri Dec 04 11:52:55.995 2015]    string "{"result":"success"}"
+[Fri Dec 04 11:52:55.995 2015] signal sender=:1.35 -> dest=(null destination) serial=221 path=/com/foobar/service/UISpeechService; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:55.995 2015]    string "voiceRecognition"
+[Fri Dec 04 11:52:55.995 2015]    string "{"state":"on"}"
+[Fri Dec 04 11:52:56.841 2015] method call sender=:1.8 -> dest=com.foobar.service.NDR serial=1342 path=/com/foobar/service/NDR; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:56.858 2015]    string "JSON_GetProperties"
+[Fri Dec 04 11:52:56.858 2015]    string "{"inprop":["POS_CalibrationLevel"]}"
+[Fri Dec 04 11:52:56.858 2015] method return sender=:1.9 -> dest=:1.8 reply_serial=1342
+[Fri Dec 04 11:52:56.858 2015]    string "{"outprop":{"POS_CalibrationLevel":{"level":2}}}"
+[Fri Dec 04 11:52:57.159 2015] method call sender=:1.8 -> dest=com.foobar.service.readPPS serial=1343 path=/com/foobar/service/readPPS; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:57.203 2015]    string "getPPSValue"
+[Fri Dec 04 11:52:57.203 2015]    string "{"attribute":"DEST","object":"can/vehcfg","value":false}"
+[Fri Dec 04 11:52:57.203 2015] method return sender=:1.2 -> dest=:1.8 reply_serial=1343
+[Fri Dec 04 11:52:57.203 2015]    string "{"DEST":0}"
+[Fri Dec 04 11:52:58.345 2015] method call sender=:1.8 -> dest=com.foobar.service.AudioMixerManager serial=1344 path=/com/foobar/service/AudioMixerManager; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:58.694 2015]    string "confirmationTone"
+[Fri Dec 04 11:52:58.694 2015]    string "{"type":"CONF_1"}"
+[Fri Dec 04 11:52:58.694 2015] signal sender=:1.8 -> dest=(null destination) serial=1345 path=/com/foobar/service/HMIVR; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:58.694 2015]    string "cancelVR"
+[Fri Dec 04 11:52:58.694 2015]    string "{"silentMode":false}"
+[Fri Dec 04 11:52:58.694 2015] method call sender=:1.35 -> dest=com.foobar.service.AudioMixerManager serial=222 path=/com/foobar/service/AudioMixerManager; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:58.694 2015]    string "getProperties"
+[Fri Dec 04 11:52:58.694 2015]    string "{"props":["activeAudioSrc"]}"
+[Fri Dec 04 11:52:58.694 2015] method call sender=:1.14 -> dest=com.foobar.service.AudioCtrlSvc serial=311 path=/com/foobar/service/AudioCtrlSvc; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:58.694 2015]    string "monolithicRequest"
+[Fri Dec 04 11:52:58.694 2015]    string "{"methodCalls":[{"method":"setMixer","params":{"batchCmds":[{"gain":0,"input":"BEEP","name":"main_mixer1","output":"FRONT_L_SPKR"},{"gain":0,"input":"BEEP","name":"main_mixer1","output":"FRONT_R_SPKR"},{"gain":-100,"input":"BEEP","name":"main_mixer1","output":"BACK_L_SPKR"},{"gain":-100,"input":"BEEP","name":"main_mixer1","output":"BACK_R_SPKR"}]}},{"method":"setVol","params":{"batchCmds":[{"input":"BEEP","output":"FRONT_L_SPKR","volKnob":8},{"input":"BEEP","output":"FRONT_R_SPKR","volKnob":8},{"input":"BEEP","output":"BACK_L_SPKR","volKnob":8},{"input":"BEEP","output":"BACK_R_SPKR","volKnob":8}]}},{"method":"setSignalBeep","params":{"rate":-1,"type":"CONF_1"}}]}"
+[Fri Dec 04 11:52:58.698 2015] signal sender=:1.12 -> dest=(null destination) serial=52 path=/com/foobar/service/AudioCtrlSvc; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:58.698 2015]    string "beepInfo"
+[Fri Dec 04 11:52:58.698 2015]    string "{"available":false,"type":"CONF_1"}"
+[Fri Dec 04 11:52:58.698 2015] method return sender=:1.12 -> dest=:1.14 reply_serial=311
+[Fri Dec 04 11:52:58.698 2015]    string "{"result":"NO_ERROR"}"
+[Fri Dec 04 11:52:58.698 2015] method return sender=:1.14 -> dest=:1.8 reply_serial=1344
+[Fri Dec 04 11:52:58.698 2015]    string "{"success":"OK"}"
+[Fri Dec 04 11:52:58.698 2015] method return sender=:1.14 -> dest=:1.35 reply_serial=222
+[Fri Dec 04 11:52:58.698 2015]    string "{"activeAudioSrc":"PROMPTS"}"
+[Fri Dec 04 11:52:58.698 2015] signal sender=:1.44 -> dest=(null destination) serial=51 path=/com/foobar/service/EmbeddedPhone; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:58.703 2015]    string "wendReason"
+[Fri Dec 04 11:52:58.703 2015]    string "{"serviceNumber":33,"reason":29}"
+[Fri Dec 04 11:52:58.703 2015] method call sender=:1.35 -> dest=com.foobar.service.HMIVR serial=223 path=/com/foobar/service/HMIVR; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:58.703 2015]    string "hideList"
+[Fri Dec 04 11:52:58.703 2015]    string "{"context":10098}"
+[Fri Dec 04 11:52:58.703 2015] signal sender=:1.12 -> dest=(null destination) serial=54 path=/com/foobar/service/AudioCtrlSvc; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:58.703 2015]    string "beepInfo"
+[Fri Dec 04 11:52:58.703 2015]    string "{"available":true,"type":"CONF_1"}"
+[Fri Dec 04 11:52:58.703 2015] method call sender=:1.14 -> dest=com.foobar.service.AudioCtrlSvc serial=314 path=/com/foobar/service/AudioCtrlSvc; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:58.703 2015]    string "monolithicRequest"
+[Fri Dec 04 11:52:58.703 2015]    string "{"methodCalls":[{"method":"setSignalBeep","params":{"rate":-1,"type":"OFF"}}]}"
+[Fri Dec 04 11:52:58.703 2015] signal sender=:1.12 -> dest=(null destination) serial=55 path=/com/foobar/service/AudioCtrlSvc; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:58.707 2015]    string "beepInfo"
+[Fri Dec 04 11:52:58.707 2015]    string "{"available":false,"type":"OFF"}"
+[Fri Dec 04 11:52:58.707 2015] method return sender=:1.12 -> dest=:1.14 reply_serial=314
+[Fri Dec 04 11:52:58.707 2015]    string "{"result":"NO_ERROR"}"
+[Fri Dec 04 11:52:58.707 2015] signal sender=:1.12 -> dest=(null destination) serial=57 path=/com/foobar/service/AudioCtrlSvc; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:58.707 2015]    string "beepInfo"
+[Fri Dec 04 11:52:58.707 2015]    string "{"available":true,"type":"OFF"}"
+[Fri Dec 04 11:52:58.707 2015] method call sender=:1.14 -> dest=com.foobar.service.AudioCtrlSvc serial=315 path=/com/foobar/service/AudioCtrlSvc; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:58.707 2015]    string "monolithicRequest"
+[Fri Dec 04 11:52:58.707 2015]    string "{"methodCalls":[{"method":"setMixer","params":{"batchCmds":[{"gain":-100,"input":"BEEP","name":"main_mixer1","output":"FRONT_L_SPKR"},{"gain":-100,"input":"BEEP","name":"main_mixer1","output":"FRONT_R_SPKR"},{"gain":-100,"input":"BEEP","name":"main_mixer1","output":"BACK_L_SPKR"},{"gain":-100,"input":"BEEP","name":"main_mixer1","output":"BACK_R_SPKR"}]}}]}"
+[Fri Dec 04 11:52:58.768 2015] method return sender=:1.12 -> dest=:1.14 reply_serial=315
+[Fri Dec 04 11:52:58.768 2015]    string "{"result":"NO_ERROR"}"
+[Fri Dec 04 11:52:58.768 2015] signal sender=:1.8 -> dest=(null destination) serial=1347 path=/com/foobar/service/HMIGateWay; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:58.768 2015]    string "popupActive"
+[Fri Dec 04 11:52:58.768 2015]    string "{"state":false,"type":-1}"
+[Fri Dec 04 11:52:58.768 2015] method return sender=:1.8 -> dest=:1.35 reply_serial=223
+[Fri Dec 04 11:52:58.768 2015]    string "{"result":"success"}"
+[Fri Dec 04 11:52:58.768 2015] method call sender=:1.35 -> dest=com.foobar.service.HMIVR serial=224 path=/com/foobar/service/HMIVR; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:58.768 2015]    string "updateVoiceBar"
+[Fri Dec 04 11:52:58.768 2015]    string "{"color":"VR_COLOR_FAIL","context":10067,"iconType":"VR_ICON_NOSPEAK","textData":"Cancelled.","timeoutRequired":true}"
+[Fri Dec 04 11:52:58.925 2015] method return sender=:1.8 -> dest=:1.35 reply_serial=224
+[Fri Dec 04 11:52:59.284 2015]    string "{"result":"success"}"
+[Fri Dec 04 11:52:59.284 2015] method call sender=:1.74 -> dest=com.foobar.service.ConnMgr serial=5 path=/com/foobar/service/ConnMgr; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:59.284 2015]    string "setProperties"
+[Fri Dec 04 11:52:59.284 2015]    string "{"set":{"dev.connected":0},"guid":164817567}"
+[Fri Dec 04 11:52:59.284 2015] method call sender=:1.24 -> dest=com.foobar.service.XMDiagnostics serial=38 path=/com/foobar/service/XMDiagnostics; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:59.284 2015]    string "requestSMSCommStatus"
+[Fri Dec 04 11:52:59.284 2015]    string "[""]"
+[Fri Dec 04 11:52:59.284 2015] method return sender=:1.17 -> dest=:1.74 reply_serial=5
+[Fri Dec 04 11:52:59.284 2015]    string "{"dev":{"class":"USB","connected":0,"disconnectIfUnused":true,"guid":164817567,"hdlr":"mcd","link":1369168,"product_str":"Sierra Wireless ARx550 Module","timestamp":{"sysTime":{"nsec":432000000,"sec":1449247658},"upTime":{"nsec":275000000,"sec":22}},"type":"Embedded","use":"INTERNET","vendor_str":"Sierra Wireless, Incorporated"},"mcd":{"dev":"/dev/swiusb5","mnt":"/dev/mcd/SERDATA_ATTACH"},"ruleName":"Embedded","user":{"pid":4464736}}"
+[Fri Dec 04 11:52:59.284 2015] method call sender=:1.74 -> dest=com.foobar.service.ConnMgr serial=6 path=/com/foobar/service/ConnMgr; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:59.288 2015]    string "delProperties"
+[Fri Dec 04 11:52:59.288 2015]    string "{"del":["ip"],"guid":164817567}"
+[Fri Dec 04 11:52:59.288 2015] error sender=:1.17 -> dest=:1.74 error_name=com.foobar.service.Error reply_serial=6
+[Fri Dec 04 11:52:59.288 2015]    string "ERROR: Failed to delete: "ip""
+[Fri Dec 04 11:52:59.288 2015] method call sender=:1.74 -> dest=com.foobar.service.ConnMgr serial=7 path=/com/foobar/service/ConnMgr; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:59.288 2015]    string "delProperties"
+[Fri Dec 04 11:52:59.288 2015]    string "{"del":["user.pid"],"guid":164817567}"
+[Fri Dec 04 11:52:59.288 2015] method return sender=:1.25 -> dest=:1.24 reply_serial=38
+[Fri Dec 04 11:52:59.288 2015]    string "{"CmdResponse":{"Data":0,"Length":0,"errCode":"eOK"}}"
+[Fri Dec 04 11:52:59.288 2015] method return sender=:1.17 -> dest=:1.74 reply_serial=7
+[Fri Dec 04 11:52:59.288 2015]    string "{"dev":{"class":"USB","connected":0,"disconnectIfUnused":true,"guid":164817567,"hdlr":"mcd","link":1369168,"product_str":"Sierra Wireless ARx550 Module","timestamp":{"sysTime":{"nsec":432000000,"sec":1449247658},"upTime":{"nsec":275000000,"sec":22}},"type":"Embedded","use":"INTERNET","vendor_str":"Sierra Wireless, Incorporated"},"mcd":{"dev":"/dev/swiusb5","mnt":"/dev/mcd/SERDATA_ATTACH"},"ruleName":"Embedded","user":{}}"
+[Fri Dec 04 11:52:59.293 2015] method call sender=:1.74 -> dest=com.foobar.service.ConnMgr serial=8 path=/com/foobar/service/ConnMgr; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:59.293 2015]    string "emitProxy"
+[Fri Dec 04 11:52:59.293 2015]    string "{"data":{"dev":{"connected":1,"link":1369168,"class":"USB","product_str":"Sierra Wireless ARx550 Module","disconnectIfUnused":true,"hdlr":"mcd","vendor_str":"Sierra Wireless, Incorporated","guid":164817567,"timestamp":{"sysTime":{"nsec":432000000,"sec":1449247658},"upTime":{"nsec":275000000,"sec":22}},"type":"Embedded","use":"INTERNET"},"mcd":{"dev":"/dev/swiusb5","mnt":"/dev/mcd/SERDATA_ATTACH"},"ruleName":"Embedded","user":{}},"name":"connectInternetError","guid":164817567}"
+[Fri Dec 04 11:52:59.293 2015] signal sender=:1.17 -> dest=(null destination) serial=131 path=/com/foobar/service/ConnMgr; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:59.293 2015]    string "connectInternetError"
+[Fri Dec 04 11:52:59.295 2015]    string "{"dev":{"class":"USB","connected":1,"disconnectIfUnused":true,"guid":164817567,"hdlr":"mcd","link":1369168,"product_str":"Sierra Wireless ARx550 Module","timestamp":{"sysTime":{"nsec":432000000,"sec":1449247658},"upTime":{"nsec":275000000,"sec":22}},"type":"Embedded","use":"INTERNET","vendor_str":"Sierra Wireless, Incorporated"},"mcd":{"dev":"/dev/swiusb5","mnt":"/dev/mcd/SERDATA_ATTACH"},"ruleName":"Embedded","user":{}}"
+[Fri Dec 04 11:52:59.295 2015] method return sender=:1.17 -> dest=:1.74 reply_serial=8
+[Fri Dec 04 11:52:59.295 2015]    string "{"dev":{"class":"USB","connected":1,"disconnectIfUnused":true,"guid":164817567,"hdlr":"mcd","link":1369168,"product_str":"Sierra Wireless ARx550 Module","timestamp":{"sysTime":{"nsec":432000000,"sec":1449247658},"upTime":{"nsec":275000000,"sec":22}},"type":"Embedded","use":"INTERNET","vendor_str":"Sierra Wireless, Incorporated"},"mcd":{"dev":"/dev/swiusb5","mnt":"/dev/mcd/SERDATA_ATTACH"},"ruleName":"Embedded","user":{}}"
+[Fri Dec 04 11:52:59.359 2015] signal sender=org.freedesktop.DBus -> dest=(null destination) serial=7 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameOwnerChanged
+[Fri Dec 04 11:52:59.359 2015]    string ":1.74"
+[Fri Dec 04 11:52:59.359 2015]    string ":1.74"
+[Fri Dec 04 11:52:59.359 2015]    string ""
+[Fri Dec 04 11:52:59.359 2015] method call sender=:1.10 -> dest=com.foobar.service.NDR serial=101 path=/com/foobar/service/NDR; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:59.360 2015]    string "JSON_GetProperties"
+[Fri Dec 04 11:52:59.360 2015]    string "{"inprop":["SEN_GPSInfo"]}"
+[Fri Dec 04 11:52:59.360 2015] method return sender=:1.9 -> dest=:1.10 reply_serial=101
+[Fri Dec 04 11:52:59.360 2015]    string "{"outprop":{"SEN_GPSInfo":{"antennaState":1,"day":4,"eastSpeed":0,"fix":3,"hdop":7,"heading":0,"height":2981,"horPosError":37,"hrs":16,"latitude":42513356,"longitude":-83444424,"min":52,"month":12,"northSpeed":0,"pdop":11,"satsUsed":10,"satsVisible":14,"sec":57,"signalQuality":4,"speed":0,"vdop":9,"vertPosError":0,"vertSpeed":0,"year":2015}}}"
+[Fri Dec 04 11:52:59.686 2015] method call sender=:1.35 -> dest=com.foobar.service.AudioMixerManager serial=225 path=/com/foobar/service/AudioMixerManager; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:59.749 2015]    string "releaseInformationSource"
+[Fri Dec 04 11:52:59.810 2015]    string "{"source":"speech"}"
+[Fri Dec 04 11:52:59.810 2015] method call sender=:1.14 -> dest=com.foobar.service.AudioCtrlSvc serial=316 path=/com/foobar/service/AudioCtrlSvc; interface=com.foobar.ServiceIpc; member=Invoke
+[Fri Dec 04 11:52:59.810 2015]    string "setMixer"
+[Fri Dec 04 11:52:59.810 2015]    string "{"batchCmds":[{"gain":0,"input":"MEDIA","name":"main_mixer1","output":"FRONT_L_SPKR"},{"gain":-99,"input":"NAV","name":"main_mixer1","output":"FRONh=/com/foobar/service/AudioMixerManager; interface=com.foobar.ServiceIpc; member=Emit
+[Fri Dec 04 11:52:59.810 2015]    string "interruptSrc"
+[Fri Dec 04 11:52:59.810 2015]    string "{"action":"removed","source":"speech"}"

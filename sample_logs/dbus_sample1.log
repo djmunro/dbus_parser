@@ -1,0 +1,51 @@
+Wed Dec  2 13:08:35 2015
+signal sender=:1.19 -> dest=(null destination) serial=1768 path=/com/foobar/service/XMFavorites; interface=com.foobar.ServiceIpc; member=Emit
+   string "favAllowed"
+   string "{"isArtistAllowed":true,"isSongAllowed":true}"
+sWed Dec  2 13:08:35 2015
+signal sender=:1.19 -> dest=(null destination) serial=1769 path=/com/foobar/service/XMApp; interface=com.foobar.ServiceIpc; member=Emit
+   string "currentStationInfo"
+   string "{"albumLocation":"/tmp/A1002V000.jpg","artist":"O-Town","audioContent":"music","backgroundLocation":"/fs/etfs/usr/var/sdars/DriverA//channelart/I00513T02.jpg","catName":"Pop","catNum":1,"channelID":10,"channelName":"Pop2K","iTunesSXMURL":"www.siriusxm.com","iTunesSongID":302985131,"info":"","isArtistFavorite":0,"isSongFavorite":0,"isSubscribed":true,"logoLocation":"/tmp/A1002V000.jpg","presetNum":255,"program":"All or Nothing (01)","shortName":"Pop2K","sid":30}"
+uWed Dec  2 13:08:35 2015
+method call sender=:1.26 -> dest=com.foobar.service.iPodTagger serial=84 path=/com/foobar/service/iPodTagger; interface=com.foobar.ServiceIpc; member=Invoke
+   string "checkTag"
+   string "{"tagInfo":[{"Name":"All or Nothing (01)","Artist":"O-Town","iTunesSongID":"302985131"}]}"
+gWed Dec  2 13:08:35 2015
+method return sender=:1.27 -> dest=:1.26 reply_serial=84
+   string "{"Artist":"O-Town","Name":"All or Nothing (01)","iTunesSongID":"302985131","tagged":false}"
+>Wed Dec  2 13:08:35 2015
+signal sender=:1.26 -> dest=(null destination) serial=85 path=/com/foobar/service/TaggingService; interface=com.foobar.ServiceIpc; member=Emit
+   string "tagContentTaggableInd"
+   string "{"isTaggable":true,"isTagged":false,"tagInfo":{"songId":302985131,"artist":"O-Town","title":"All or Nothing (01)"}}"
+tWed Dec  2 13:08:35 2015
+signal sender=:1.35 -> dest=(null destination) serial=10205 path=/com/foobar/service/Navigation; interface=com.foobar.ServiceIpc; member=Emit
+   string "POS_PositionInformation"
+   string "{"posInfo":"<CAB>USA<*><CTR>United States<*><CTY>Michigan City<*><DIR>72<*><DSO>60<*><GEO>-086.876212 +041.658374<*><HNO><*><HWY>1<*><JVA>0<*><RES>0<*><SAB>IN<*><SPA>0<*><SPL>113<*><STA>Indiana<*><TZO>-420<*><ZIP>46360<*><STR>I-94 %s<*><TXT>I-94<*><ICON>/tmp/nng_rs_icon_11.bmp<*><ITRN>Borman Expy %s<*><TXT>I-94<*><ICON>/tmp/nng_rs_icon_11.bmp<*>"}"
+ Wed Dec  2 13:08:35 2015
+signal sender=:1.3 -> dest=(null destination) serial=4344 path=/com/foobar/service/Climate; interface=com.foobar.ServiceIpc; member=Emit
+   string "insideTemp"
+   string "{"insideTemp":35}"
+=Wed Dec  2 13:08:36 2015
+signal sender=:1.35 -> dest=(null destination) serial=10206 path=/com/foobar/service/Navigation; interface=com.foobar.ServiceIpc; member=Emit
+   string "RT_NextDestinationInfo"
+   string "{"distance":97021,"time":61}"
+(Wed Dec  2 13:08:36 2015
+signal sender=:1.29 -> dest=(null destination) serial=3647 path=/com/foobar/service/Rse; interface=com.foobar.ServiceIpc; member=Emit
+   string "playTimeValue"
+   string "{"timevalue":4269,"minute":660,"playDurationValue":7809,"hour":3600,"second":"9"}"
+/Wed Dec  2 13:08:36 2015
+method call sender=:1.11 -> dest=com.foobar.service.Navigation serial=1213 path=/com/foobar/service/Navigation; interface=com.foobar.ServiceIpc; member=Invoke
+   string "JSON_GetProperties"
+   string "{"inprop":["POS_PositionInformation"]}"
+oWed Dec  2 13:08:36 2015
+method return sender=:1.35 -> dest=:1.11 reply_serial=1213
+   string "{"outprop":{"POS_PositionInformation":"<CAB>USA<*><CTR>United States<*><CTY>Michigan City<*><DIR>72<*><DSO>60<*><GEO>-086.876212 +041.658374<*><HNO><*><HWY>1<*><JVA>0<*><RES>0<*><SAB>IN<*><SPA>0<*><SPL>113<*><STA>Indiana<*><TZO>-420<*><ZIP>46360<*><STR>I-94 %s<*><TXT>I-94<*><ICON>/tmp/nng_rs_icon_11.bmp<*><ITRN>Borman Expy %s<*><TXT>I-94<*><ICON>/tmp/nng_rs_icon_11.bmp<*>"}}"
+SWed Dec  2 13:08:36 2015
+signal sender=:1.3 -> dest=(null destination) serial=4345 path=/com/foobar/service/Climate; interface=com.foobar.ServiceIpc; member=Emit
+   string "insideTemp"
+   string "{"insideTemp":35}"
+"Wed Dec  2 13:08:36 2015
+signal sender=:1.35 -> dest=(null destination) serial=10208 path=/com/foobar/service/Navigation; interface=com.foobar.ServiceIpc; member=Emit
+   string "POS_PositionInformation"
+   string "{"posInfo":"<CAB>USA<*><CTR>United States<*><CTY>Michigan City<*><DIR>71<*><DSO>60<*><GEO>-086.876556 +041.658333<*><HNO><*><HWY>1<*><JVA>0<*><RES>0<*><SAB>IN<*><SPA>0<*><SPL>113<*><STA>Indiana<*><TZO>-420<*><ZIP>46360<*><STR>I-94 %s<*><TXT>I-94<*><ICON>/tmp/nng_rs_icon_11.bmp<*><ITRN>Borman Expy %s<*><TXT>I-94<*><ICON>/tmp/nng_rs_icon_11.bmp<*>"}"
+0Wed Dec  2 13:08:36 2015
