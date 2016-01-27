@@ -21,11 +21,15 @@ MATCH_SIGNAL = re.compile(r'signal sender=(?P<sender>.*) -> dest=(?P<dest>.*) se
 MATCH_METHOD_CALL = re.compile(r'method call sender=(?P<sender>.*) -> dest=(?P<dest>.*) serial=(?P<serial>.*) path=(?P<path>.*) interface=(?P<interface>.*) member=(?P<member>.*)\n\s+string (?P<function>.*)')
 MATCH_METHOD_RETURN = re.compile(r'method return sender=(?P<sender>.*) -> dest=(?P<dest>.*) reply_serial=(?P<reply_serial>.*)')
 
+MATCH_HELLO_METHOD_CALL = re.compile(r'method call sender=(?P<sender>.*) -> dest=(?P<dest>.*) serial=(?P<serial>.*) path=(?P<path>.*) interface=(?P<interface>.*) member=(?P<member>.*)')
+
+
 
 def parse_message(text):
     signal = MATCH_SIGNAL.search(text)
     method_call = MATCH_METHOD_CALL.search(text)
     method_return = MATCH_METHOD_RETURN.search(text)
+    HELLO_METHOD_CALL = MATCH_HELLO_METHOD_CALL.search(text)
 
     if signal:
         return signal.groupdict()
@@ -33,6 +37,8 @@ def parse_message(text):
         return method_call.groupdict()
     if method_return:
         return method_return.groupdict()
+    if HELLO_METHOD_CALL:
+        return HELLO_METHOD_CALL.groupdict()
     raise Exception('Cannot parse message:\n{}'.format(text))
 
 #def parse_messages(text):
@@ -120,9 +126,9 @@ if __name__ == '__main__':
 
     function_messages = [x for x in messages if 'function' in x]
     invoke_messages = [x for x in messages if 'member' in x and (x['member'] == 'Invoke' or x['member'] == 'AddMatch')]
-    emit_messages = [x for x in messages if 'member' in x and (x['member'] == 'Emit' or x['member'] == 'NameAcquired' or x['member'] == 'NameOwnerChanged')]
+    emit_messages = [x for x in messages if 'member' in x and x['member'] == 'Emit']
 
-    # Signal Data
+    # Signal Data (EMIT)
     print 'Signals: (Member=Emit),Occurences,Path'
     grouped = itertools.groupby(sorted(emit_messages, key=groupby_key), groupby_key)
     for group, items in grouped:
